@@ -3,13 +3,13 @@ import { StyleSheet, View } from 'react-native';
 import Topo from './componentes/Topo';
 import Detalhes from './componentes/Detalhes';
 
-function Cesta (){
+function Cesta ({ topo, detalhes }){
     return (
         <>
-            <Topo />
+            <Topo {...topo} />
 
             <View style={estilos.cesta}>
-                <Detalhes />
+                <Detalhes {...detalhes} />
             </View>
         </>
         
